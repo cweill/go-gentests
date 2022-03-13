@@ -39,6 +39,8 @@ Available options:
 
   -i                    print test inputs in error messages
 
+  -named                switch table tests from using slice to map (with test name for the key)
+
   -only                 regexp. generate tests for functions and methods that match only.
                          Takes precedence over -all
 
@@ -58,6 +60,8 @@ Available options:
   -template_params_file read external parameters to template by json with file
 
   -template_params      read external parameters to template by json with stdin
+
+  -use_go_cmp           use cmp.Equal (google/go-cmp) instead of reflect.DeepEqual
 ```
 
 ## Contributions
